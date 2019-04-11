@@ -45,6 +45,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             ApplicationOpener.shared.open($0)
         }
     }
+    
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        MainWindowController.shared.window?.makeKeyAndOrderFront(nil)
+        return true
+    }
 }
 
 extension AppDelegate {
