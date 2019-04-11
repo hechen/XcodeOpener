@@ -25,7 +25,15 @@ public enum AppKeys: String {
     case menuOnly = "menuOnly"
     case xcodes = "xcodes"
     case rules = "rules"
+    case appMode = "appMode"
 }
+
+public enum ApplicationMode: Int {
+    case menuAndDock
+    case menuOnly
+    case background
+}
+
 
 extension AppDefaults: KeyValueStoreType {
     public func bool(for key: String) -> Bool {
@@ -42,5 +50,13 @@ extension AppDefaults: KeyValueStoreType {
     
     public func setData(for key: String, _ data: Data) {
         UserDefaults.standard.setValue(data, forKey: key)
+    }
+    
+    public func setInt(for key: String, _ value: Int) {
+        UserDefaults.standard.setValue(value, forKey: key)
+    }
+    
+    public func int(for key: String) -> Int {
+        return UserDefaults.standard.integer(forKey: key)
     }
 }

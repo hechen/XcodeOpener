@@ -9,14 +9,13 @@
 import Cocoa
 import CoreServices
 
-
+// Only Register All Xcode-related files.
 enum XcodeFileExtension: String, CaseIterable, Codable {
     case project = "xcodeproj"
     case workspace = "xcworkspace"
 }
 
 class ApplicationOpener {
-    
     static let shared = ApplicationOpener()
     
     private(set) var rules = [XcodeRule]()

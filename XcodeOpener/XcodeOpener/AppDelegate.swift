@@ -11,10 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        let launcherAppId = "app.chen.osx.XcodeOpenerLauncher"
+        let runningApps = NSWorkspace.shared.runningApplications
+        let isRunning = !runningApps.filter { $0.bundleIdentifier == launcherAppId }.isEmpty
+        
+        if isRunning {
+            DistributedNotificationCenter.default().post(name: .killLauncher,
+                                                         object: Bundle.main.bundleIdentifier!)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -30,3 +36,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+extension Notification.Name {
+    static let killLauncher = Notification.Name("app.chen.xcodeopener.killLauncher")
+}

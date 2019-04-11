@@ -9,16 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    
-    
     @IBOutlet weak var xcodeListBox: NSBox!
     @IBOutlet weak var rulesBox: NSBox!
     
-    
-    
     @IBOutlet weak var startAtLoginButton: NSButton!
     
-    @IBOutlet weak var menuOnlyButton: NSButton!
+    @IBOutlet weak var showAppModeButton: NSPopUpButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +24,7 @@ class ViewController: NSViewController {
         xcodeListBox.borderType = .noBorder
         rulesBox.borderType = .noBorder
         
-        startAtLoginButton.isOn = AppDefaults.shared.startAtLogin
-        menuOnlyButton.isOn = AppDefaults.shared.menuOnly
+        startAtLoginButton.isOn = LaunchAtLogin.isEnabled
     }
 
 
@@ -59,10 +55,11 @@ class ViewController: NSViewController {
     }
 
     @IBAction func startAtLoginChecked(_ sender: Any) {
-        
+        LaunchAtLogin.isEnabled = startAtLoginButton.isOn
     }
-    
-    @IBAction func menuOnlyChecked(_ sender: Any) {
+
+    @IBAction func switchApplicationMode(_ sender: Any) {
+        guard let mode = ApplicationMode(rawValue: showAppModeButton.indexOfSelectedItem) else { return }
         
     }
 }

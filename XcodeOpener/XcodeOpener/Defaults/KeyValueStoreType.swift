@@ -17,6 +17,9 @@ protocol KeyValueStoreType: class {
     
     func data(for key: String) -> Data?
     func setData(for key: String, _ data: Data)
+    
+    func int(for key: String) -> Int
+    func setInt(for key: String, _ value: Int)
 }
 extension KeyValueStoreType {
     var startAtLogin: Bool {
@@ -76,6 +79,16 @@ extension KeyValueStoreType {
             }
             
             setData(for: AppKeys.xcodes.rawValue, data)
+        }
+    }
+    
+    var appMode: ApplicationMode {
+        get {
+            guard let mode = ApplicationMode(rawValue: int(for: AppKeys.appMode.rawValue)) else { return .menuAndDock }
+            return mode
+        }
+        set {
+            setInt(for: AppKeys.appMode.rawValue, newValue.rawValue)
         }
     }
 }
