@@ -13,6 +13,8 @@
 		740340C7225F277E00193BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740340C6225F277E00193BC1 /* Assets.xcassets */; };
 		740340CA225F277E00193BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740340C8225F277E00193BC1 /* Main.storyboard */; };
 		740340D1225F289F00193BC1 /* XcodeOpenerLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 740340C0225F277C00193BC1 /* XcodeOpenerLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		740340D3225F2EE600193BC1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740340D2225F2EE600193BC1 /* MainWindowController.swift */; };
+		740340D7225F391D00193BC1 /* DefaultsSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */; };
 		741AE957225DC4B800DDE7EA /* ApplicationOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */; };
 		741AE95C225DDD7A00DDE7EA /* XcodesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */; };
 		741AE95F225DDF0100DDE7EA /* Xcodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */; };
@@ -27,7 +29,7 @@
 		74A5B802225E01D600293442 /* KeyValueStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B801225E01D600293442 /* KeyValueStoreType.swift */; };
 		74A5B804225E01EB00293442 /* NSButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B803225E01EB00293442 /* NSButton+.swift */; };
 		74EC1572225DC31D001A6439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1571225DC31D001A6439 /* AppDelegate.swift */; };
-		74EC1574225DC31D001A6439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1573225DC31D001A6439 /* ViewController.swift */; };
+		74EC1574225DC31D001A6439 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1573225DC31D001A6439 /* MainViewController.swift */; };
 		74EC1576225DC31F001A6439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EC1575225DC31F001A6439 /* Assets.xcassets */; };
 		74EC1579225DC31F001A6439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EC1577225DC31F001A6439 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		740340C9225F277E00193BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740340CB225F277E00193BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		740340CC225F277E00193BC1 /* XcodeOpenerLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeOpenerLauncher.entitlements; sourceTree = "<group>"; };
+		740340D2225F2EE600193BC1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsSettingViewController.swift; sourceTree = "<group>"; };
 		741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationOpener.swift; sourceTree = "<group>"; };
 		741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodesListViewController.swift; sourceTree = "<group>"; };
 		741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xcodes.storyboard; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		74A5B803225E01EB00293442 /* NSButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+.swift"; sourceTree = "<group>"; };
 		74EC156E225DC31D001A6439 /* XcodeOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EC1571225DC31D001A6439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74EC1573225DC31D001A6439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74EC1573225DC31D001A6439 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		74EC1575225DC31F001A6439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74EC1578225DC31F001A6439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74EC157A225DC31F001A6439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,14 +112,37 @@
 			path = XcodeOpenerLauncher;
 			sourceTree = "<group>";
 		};
-		741AE962225DDF9E00DDE7EA /* Xcode List */ = {
+		740340D4225F345000193BC1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */,
+				740340B8225F1F2800193BC1 /* LaunchAtLogin.swift */,
+				740340BA225F254E00193BC1 /* AppModeSwitcher.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		740340D5225F346300193BC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */,
+				74EC1577225DC31F001A6439 /* Main.storyboard */,
+				74EC1573225DC31D001A6439 /* MainViewController.swift */,
+				740340D2225F2EE600193BC1 /* MainWindowController.swift */,
+				741AE962225DDF9E00DDE7EA /* Xcodes */,
+				741AE963225DDFAD00DDE7EA /* Rules */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		741AE962225DDF9E00DDE7EA /* Xcodes */ = {
 			isa = PBXGroup;
 			children = (
 				741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */,
 				741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */,
 				741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */,
 			);
-			path = "Xcode List";
+			path = Xcodes;
 			sourceTree = "<group>";
 		};
 		741AE963225DDFAD00DDE7EA /* Rules */ = {
@@ -142,8 +169,6 @@
 			children = (
 				74A5B7FF225DFF5D00293442 /* AppDefaults.swift */,
 				74A5B801225E01D600293442 /* KeyValueStoreType.swift */,
-				740340B8225F1F2800193BC1 /* LaunchAtLogin.swift */,
-				740340BA225F254E00193BC1 /* AppModeSwitcher.swift */,
 			);
 			path = Defaults;
 			sourceTree = "<group>";
@@ -179,18 +204,15 @@
 		74EC1570225DC31D001A6439 /* XcodeOpener */ = {
 			isa = PBXGroup;
 			children = (
-				74A5B807225E029E00293442 /* Model */,
-				74EC1571225DC31D001A6439 /* AppDelegate.swift */,
-				74EC1573225DC31D001A6439 /* ViewController.swift */,
-				74EC1575225DC31F001A6439 /* Assets.xcassets */,
-				74EC1577225DC31F001A6439 /* Main.storyboard */,
-				74EC157A225DC31F001A6439 /* Info.plist */,
-				74EC157B225DC31F001A6439 /* XcodeOpener.entitlements */,
-				741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */,
-				741AE962225DDF9E00DDE7EA /* Xcode List */,
-				741AE963225DDFAD00DDE7EA /* Rules */,
+				740340D4225F345000193BC1 /* Utility */,
+				740340D5225F346300193BC1 /* Controllers */,
 				74A5B805225E020900293442 /* Extension */,
 				74A5B806225E021B00293442 /* Defaults */,
+				74A5B807225E029E00293442 /* Model */,
+				74EC1571225DC31D001A6439 /* AppDelegate.swift */,
+				74EC1575225DC31F001A6439 /* Assets.xcassets */,
+				74EC157A225DC31F001A6439 /* Info.plist */,
+				74EC157B225DC31F001A6439 /* XcodeOpener.entitlements */,
 			);
 			path = XcodeOpener;
 			sourceTree = "<group>";
@@ -313,10 +335,12 @@
 			files = (
 				740340BB225F254E00193BC1 /* AppModeSwitcher.swift in Sources */,
 				74A5B7F3225DE7E600293442 /* XcodeAlias.swift in Sources */,
+				740340D7225F391D00193BC1 /* DefaultsSettingViewController.swift in Sources */,
 				740340B9225F1F2800193BC1 /* LaunchAtLogin.swift in Sources */,
 				741AE957225DC4B800DDE7EA /* ApplicationOpener.swift in Sources */,
-				74EC1574225DC31D001A6439 /* ViewController.swift in Sources */,
+				74EC1574225DC31D001A6439 /* MainViewController.swift in Sources */,
 				74A5B802225E01D600293442 /* KeyValueStoreType.swift in Sources */,
+				740340D3225F2EE600193BC1 /* MainWindowController.swift in Sources */,
 				74A5B7F5225DE81800293442 /* Rule.swift in Sources */,
 				741AE965225DDFF600DDE7EA /* OpenRulesListViewController.swift in Sources */,
 				74A5B7FE225DF55600293442 /* NSStoryboard+.swift in Sources */,

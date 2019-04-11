@@ -30,17 +30,21 @@ extension NSUserInterfaceItemIdentifier {
 extension NSStoryboard.Name {
     public static let xcodes = NSStoryboard.Name("Xcodes")
     public static let rules = NSStoryboard.Name("Rules")
+    public static let main = NSStoryboard.Name("Main")
 }
 
 extension NSStoryboard {
     static let xcodes = NSStoryboard(name: .xcodes, bundle: nil)
     static let rules = NSStoryboard(name: .rules, bundle: nil)
+    static let main = NSStoryboard(name: .main, bundle: nil)
 }
 
 
 extension NSStoryboard.SceneIdentifier {
+    public static let mainWindowController = NSStoryboard.SceneIdentifier("MainWindowController")
     public static let addRuleViewController = NSStoryboard.SceneIdentifier("addRuleViewController")
     public static let addXcodeViewController = NSStoryboard.SceneIdentifier("addXcodeViewController")
+    public static let defaultsSettingViewController = NSStoryboard.SceneIdentifier("DefaultsSettingViewController")
 }
 
 extension NSStoryboard {
@@ -50,6 +54,14 @@ extension NSStoryboard {
     }
     func instantiateAddRuleViewController() -> AddRuleViewController {
         let vc = instantiateController(withIdentifier: .addRuleViewController) as! AddRuleViewController
+        return vc
+    }
+    func instantiateMainWindowController() -> MainWindowController {
+        let vc = instantiateController(withIdentifier: .mainWindowController) as! MainWindowController
+        return vc
+    }
+    func instantiateDefaultsSettingViewController() -> DefaultsSettingViewController {
+        let vc = instantiateController(withIdentifier: .defaultsSettingViewController) as! DefaultsSettingViewController
         return vc
     }
 }

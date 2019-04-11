@@ -11,7 +11,6 @@ import ServiceManagement
 
 public struct LaunchAtLogin {
     private static let id = "app.chen.osx.XcodeOpenerLauncher"
-    
     public static var isEnabled: Bool {
         get {
             guard let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]]) else {

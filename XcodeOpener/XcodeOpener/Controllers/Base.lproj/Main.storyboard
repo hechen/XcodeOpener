@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -683,11 +683,11 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController storyboardIdentifier="MainWindowController" id="B8D-0N-5wS" customClass="MainWindowController" customModule="XcodeOpener" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Xcode Opener" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="241" width="480" height="269"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -699,24 +699,24 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="250.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="XcodeOpener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="MainViewController" customModule="XcodeOpener" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="684" height="621"/>
+                        <rect key="frame" x="0.0" y="0.0" width="687" height="621"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9w3-tS-jBJ">
-                                <rect key="frame" x="20" y="360" width="644" height="241"/>
+                                <rect key="frame" x="20" y="360" width="647" height="241"/>
                                 <view key="contentView" id="18m-Bd-TGf">
-                                    <rect key="frame" x="1" y="1" width="642" height="239"/>
+                                    <rect key="frame" x="1" y="1" width="645" height="239"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <containerView translatesAutoresizingMaskIntoConstraints="NO" id="yNq-Jx-wK7">
-                                            <rect key="frame" x="0.0" y="0.0" width="642" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="645" height="239"/>
                                             <connections>
                                                 <segue destination="1bW-kK-zPW" kind="embed" id="ZGb-7J-V2i"/>
                                             </connections>
@@ -734,13 +734,13 @@
                                 </constraints>
                             </box>
                             <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="n6i-Sf-Km2">
-                                <rect key="frame" x="20" y="94" width="644" height="241"/>
+                                <rect key="frame" x="20" y="94" width="647" height="241"/>
                                 <view key="contentView" id="gLU-mF-e8E">
-                                    <rect key="frame" x="1" y="1" width="642" height="239"/>
+                                    <rect key="frame" x="1" y="1" width="645" height="239"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <containerView translatesAutoresizingMaskIntoConstraints="NO" id="x9f-Wf-NEW">
-                                            <rect key="frame" x="0.0" y="0.0" width="642" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="645" height="239"/>
                                             <connections>
                                                 <segue destination="Co9-Qc-P9N" kind="embed" id="7Le-Km-fFe"/>
                                             </connections>
@@ -764,11 +764,11 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="startAtLoginChecked:" target="XfG-lQ-9wD" id="6tQ-U5-Zak"/>
+                                    <action selector="startAtLoginChecked:" target="XfG-lQ-9wD" id="gfB-yL-CjQ"/>
                                 </connections>
                             </button>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tqi-7l-iPU">
-                                <rect key="frame" x="532" y="35" width="135" height="25"/>
+                                <rect key="frame" x="535" y="35" width="135" height="25"/>
                                 <popUpButtonCell key="cell" type="push" title="Menu And Dock" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="f2u-pZ-BsI" id="MCL-SQ-TWC">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -781,7 +781,7 @@
                                     </menu>
                                 </popUpButtonCell>
                                 <connections>
-                                    <action selector="switchApplicationMode:" target="XfG-lQ-9wD" id="u1Z-pz-fjM"/>
+                                    <action selector="switchApplicationMode:" target="XfG-lQ-9wD" id="kZb-Lx-Ndo"/>
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-Ax-Ezj">
@@ -797,6 +797,7 @@
                             <constraint firstAttribute="trailing" secondItem="Tqi-7l-iPU" secondAttribute="trailing" constant="20" id="BgF-me-XSR"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8H5-tI-QB0" secondAttribute="trailing" constant="20" symbolic="YES" id="Djv-Ma-evx"/>
                             <constraint firstItem="Tqi-7l-iPU" firstAttribute="centerY" secondItem="8H5-tI-QB0" secondAttribute="centerY" id="Itu-TB-R5m"/>
+                            <constraint firstItem="hdw-Ax-Ezj" firstAttribute="leading" secondItem="8H5-tI-QB0" secondAttribute="trailing" constant="273" id="MLO-h8-LXs"/>
                             <constraint firstItem="9w3-tS-jBJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="NPe-cg-iff"/>
                             <constraint firstItem="8H5-tI-QB0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="SFd-TC-JpQ"/>
                             <constraint firstItem="hdw-Ax-Ezj" firstAttribute="centerY" secondItem="Tqi-7l-iPU" secondAttribute="centerY" id="SpW-sm-9my"/>
@@ -805,15 +806,15 @@
                             <constraint firstItem="9w3-tS-jBJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="dGK-tr-sIy"/>
                             <constraint firstItem="n6i-Sf-Km2" firstAttribute="leading" secondItem="9w3-tS-jBJ" secondAttribute="leading" id="eK8-Wu-0nM"/>
                             <constraint firstItem="n6i-Sf-Km2" firstAttribute="top" secondItem="9w3-tS-jBJ" secondAttribute="bottom" constant="25" id="i6h-y6-TUg"/>
-                            <constraint firstItem="Tqi-7l-iPU" firstAttribute="leading" secondItem="hdw-Ax-Ezj" secondAttribute="trailing" constant="5" id="m26-yY-Nwd"/>
+                            <constraint firstItem="Tqi-7l-iPU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hdw-Ax-Ezj" secondAttribute="trailing" constant="8" symbolic="YES" id="m26-yY-Nwd"/>
                             <constraint firstItem="n6i-Sf-Km2" firstAttribute="trailing" secondItem="9w3-tS-jBJ" secondAttribute="trailing" id="wkk-t5-jKP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rulesBox" destination="n6i-Sf-Km2" id="zrn-mR-tx0"/>
-                        <outlet property="showAppModeButton" destination="Tqi-7l-iPU" id="0p2-gO-A2e"/>
-                        <outlet property="startAtLoginButton" destination="8H5-tI-QB0" id="81K-Ee-UuW"/>
-                        <outlet property="xcodeListBox" destination="9w3-tS-jBJ" id="0ak-V8-WfY"/>
+                        <outlet property="ruleListBox" destination="n6i-Sf-Km2" id="O81-uh-lxf"/>
+                        <outlet property="startAtLoginButton" destination="8H5-tI-QB0" id="2wC-sl-J8b"/>
+                        <outlet property="switchAppModeButton" destination="Tqi-7l-iPU" id="vjC-PZ-RGp"/>
+                        <outlet property="xcodeListBox" destination="9w3-tS-jBJ" id="Qn4-WE-ERR"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -826,7 +827,7 @@
                 <controllerPlaceholder storyboardName="Xcodes" id="1bW-kK-zPW" sceneMemberID="viewController"/>
                 <customObject id="ZVT-Ky-fgv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="599"/>
+            <point key="canvasLocation" x="646" y="838"/>
         </scene>
         <!--Rules-->
         <scene sceneID="FAh-wR-hCP">
@@ -835,6 +836,92 @@
                 <customObject id="leO-Uo-ZUk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645" y="1004"/>
+        </scene>
+        <!--Defaults Setting View Controller-->
+        <scene sceneID="H3y-hT-M1m">
+            <objects>
+                <viewController storyboardIdentifier="DefaultsSettingViewController" id="mgT-w7-Zyn" customClass="DefaultsSettingViewController" customModule="XcodeOpener" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="TEX-tW-Prf">
+                        <rect key="frame" x="0.0" y="0.0" width="607" height="235"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9se-nm-Yay">
+                                <rect key="frame" x="257" y="101" width="142" height="19"/>
+                                <buttonCell key="cell" type="check" title=".xcodeworkspace" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HSi-hc-Idq">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="15"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setSelfAsDefaultWorkspaceOpener:" target="mgT-w7-Zyn" id="zfP-gt-yO8"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UYq-UV-8q1">
+                                <rect key="frame" x="20" y="194" width="338" height="21"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Set XcodeOpener as deafult application for:" id="TRH-Ly-Tco">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Acl-oO-KeU">
+                                <rect key="frame" x="257" y="144" width="94" height="19"/>
+                                <buttonCell key="cell" type="check" title=".xcodeproj" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qMu-p5-8tf">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="15"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setSelfAsDefaultProjectOpener:" target="mgT-w7-Zyn" id="IgC-vf-5vW"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="khM-d6-aEY">
+                                <rect key="frame" x="516" y="13" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wbm-tZ-Rld">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OKAction:" target="mgT-w7-Zyn" id="gVg-KH-cXt"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="crp-qu-kxa">
+                                <rect key="frame" x="446" y="13" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FYO-Ph-gbd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quitAction:" target="mgT-w7-Zyn" id="Z3p-Gy-2ug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Acl-oO-KeU" firstAttribute="top" secondItem="UYq-UV-8q1" secondAttribute="bottom" constant="33" id="1BZ-W6-rJz"/>
+                            <constraint firstItem="khM-d6-aEY" firstAttribute="width" secondItem="crp-qu-kxa" secondAttribute="width" id="1Ox-QD-jIJ"/>
+                            <constraint firstItem="crp-qu-kxa" firstAttribute="centerY" secondItem="khM-d6-aEY" secondAttribute="centerY" id="3mO-r0-7ko"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9se-nm-Yay" secondAttribute="trailing" constant="20" symbolic="YES" id="AOL-Zn-Xkb"/>
+                            <constraint firstAttribute="trailing" secondItem="khM-d6-aEY" secondAttribute="trailing" constant="31" id="DLc-hU-v07"/>
+                            <constraint firstAttribute="bottom" secondItem="khM-d6-aEY" secondAttribute="bottom" constant="20" id="Fb5-2j-K9r"/>
+                            <constraint firstItem="Acl-oO-KeU" firstAttribute="centerX" secondItem="TEX-tW-Prf" secondAttribute="centerX" id="Q99-UA-6Gf"/>
+                            <constraint firstItem="UYq-UV-8q1" firstAttribute="leading" secondItem="TEX-tW-Prf" secondAttribute="leading" constant="22" id="RiT-zO-JFk"/>
+                            <constraint firstItem="UYq-UV-8q1" firstAttribute="top" secondItem="TEX-tW-Prf" secondAttribute="top" constant="20" id="YuG-UR-Fyu"/>
+                            <constraint firstItem="khM-d6-aEY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="crp-qu-kxa" secondAttribute="trailing" constant="12" symbolic="YES" id="bzY-uG-B3q"/>
+                            <constraint firstItem="crp-qu-kxa" firstAttribute="leading" secondItem="TEX-tW-Prf" secondAttribute="leading" constant="452" id="fHd-a0-Nkb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UYq-UV-8q1" secondAttribute="trailing" constant="20" symbolic="YES" id="rtR-8x-sej"/>
+                            <constraint firstItem="9se-nm-Yay" firstAttribute="leading" secondItem="Acl-oO-KeU" secondAttribute="leading" id="tLA-Az-893"/>
+                            <constraint firstItem="9se-nm-Yay" firstAttribute="top" secondItem="Acl-oO-KeU" secondAttribute="bottom" constant="28" id="vss-RL-PEc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="xcodeProjCheckedButton" destination="Acl-oO-KeU" id="smF-TS-F0R"/>
+                        <outlet property="xcodeWorkspaceCheckedButton" destination="9se-nm-Yay" id="hpB-ad-w1a"/>
+                    </connections>
+                </viewController>
+                <customObject id="7YA-y7-RCe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.5" y="358.5"/>
         </scene>
     </scenes>
 </document>
