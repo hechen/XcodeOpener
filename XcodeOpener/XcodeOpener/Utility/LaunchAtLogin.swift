@@ -10,7 +10,7 @@ import Foundation
 import ServiceManagement
 
 public struct LaunchAtLogin {
-    private static let id = "app.chen.osx.XcodeOpenerLauncher"
+    private static let id = "app.chen.macos.XcodeOpenerLauncher"
     public static var isEnabled: Bool {
         get {
             guard let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]]) else {
@@ -20,8 +20,7 @@ public struct LaunchAtLogin {
             return job?["OnDemand"] as? Bool ?? false
         }
         set {
-            let ret = SMLoginItemSetEnabled(id as CFString, newValue)
-            print("Set Login Item \(ret ? "Success" : "Failed")")
+            SMLoginItemSetEnabled(id as CFString, newValue)
         }
     }
 }

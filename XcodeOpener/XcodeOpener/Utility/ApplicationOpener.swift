@@ -9,12 +9,11 @@
 import Cocoa
 import CoreServices
 
-
 public protocol FileExtension {
     var type: String { get }
 }
 
-// Only Register All Xcode-related files.
+// register all Xcode-related files only.
 enum XcodeFileExtension: String, CaseIterable, Codable {
     case project = "xcodeproj"
     case workspace = "xcworkspace"
@@ -27,7 +26,14 @@ extension XcodeFileExtension: FileExtension {
 
 enum XcodeApplication: String {
     case apple = "com.apple.dt.Xcode"
-    case opener = "app.chen.osx.xcodeopener"
+    case opener = "app.chen.macos.XcodeOpener"
+}
+
+
+extension URL {
+    var fileExtension: XcodeFileExtension? {
+        return XcodeFileExtension(rawValue: self.pathExtension)
+    }
 }
 
 class ApplicationOpener {
@@ -41,16 +47,14 @@ class ApplicationOpener {
         self.xcodeAlias = AppDefaults.shared.xcodeAliases
     }
     
-    // using user-defined opener rules to open this file.
+    // use user-defined opener rules to open this file.
     func open(_ file: URL) {
-        let rule = rules.filter {
-            $0.condition.rawValue == file.pathExtension
-            }.first
-        
+        let rule = rules.filter { $0.match(file.fileExtension) }.first
         if rule == nil {
             // TODO fallback policy
             return
         }
+        
         NSWorkspace.shared.openFile(file.path, withApplication: rule!.execution, andDeactivate: true)
     }
     
@@ -113,7 +117,7 @@ extension ApplicationOpener {
     
     func checkDefaultApp(for fileExtension: FileExtension, is application: XcodeApplication) -> Bool {
         guard let UTI = UTI(for: fileExtension) else { return false }
-        let defaultHandler = LSCopyDefaultRoleHandlerForContentType(UTI, LSRolesMask.all)?.takeRetainedValue() as? String
+        let defaultHandler = LSCopyDefaultRoleHandlerForContentType(UTI, LSRolesMask.all)?.takeRetainedValue() as String?
         return defaultHandler == application.rawValue
     }
     

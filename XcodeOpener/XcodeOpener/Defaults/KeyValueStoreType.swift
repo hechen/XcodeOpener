@@ -8,8 +8,11 @@
 
 import Foundation
 
-
-
+public enum ApplicationMode: Int {
+    case menuAndDock
+    case menuOnly
+    case background
+}
 
 protocol KeyValueStoreType: class {
     func bool(for key: String) -> Bool

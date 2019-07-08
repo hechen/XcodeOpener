@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public class AppDefaults {
     static let shared = AppDefaults()
     @discardableResult init() {
@@ -27,13 +26,6 @@ public enum AppKeys: String {
     case rules = "rules"
     case appMode = "appMode"
 }
-
-public enum ApplicationMode: Int {
-    case menuAndDock
-    case menuOnly
-    case background
-}
-
 
 extension AppDefaults: KeyValueStoreType {
     public func bool(for key: String) -> Bool {

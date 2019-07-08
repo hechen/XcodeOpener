@@ -10,17 +10,13 @@ import Cocoa
 
 class XcodesListViewController: NSViewController {
 
-
     @IBOutlet weak var xcodeVersionsList: NSTableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
         
-        xcodeVersionsList.allowsMultipleSelection = false
-        xcodeVersionsList.delegate = self
-        xcodeVersionsList.dataSource = self
+        configTableView()
     }
     
     @IBAction func addXcodeAction(_ sender: Any) {
@@ -42,30 +38,5 @@ class XcodesListViewController: NSViewController {
         
         let alias = ApplicationOpener.shared.xcodeAlias[xcodeVersionsList.selectedRow]
         ApplicationOpener.shared.removeAlias(alias)
-    }
-}
-
-
-extension XcodesListViewController: NSTableViewDataSource {
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return ApplicationOpener.shared.xcodeAlias.count
-    }
-}
-
-extension XcodesListViewController: NSTableViewDelegate {
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let xcodeAlias = ApplicationOpener.shared.xcodeAlias[row]
-        if tableColumn == tableView.tableColumns[0] {
-            if let cell = tableView.makeView(withIdentifier: .xcodeAlias, owner: nil) as? NSTableCellView {
-                cell.textField?.stringValue = xcodeAlias.alias
-                return cell
-            }
-        } else if tableColumn == tableView.tableColumns[1] {
-            if let cell = tableView.makeView(withIdentifier: .application, owner: nil) as? NSTableCellView {
-                cell.textField?.stringValue = xcodeAlias.applicationPath
-                return cell
-            }
-        }
-        return nil
     }
 }

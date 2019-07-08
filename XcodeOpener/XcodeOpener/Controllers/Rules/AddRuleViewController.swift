@@ -16,7 +16,7 @@ class AddRuleViewController: NSViewController {
     
     @IBOutlet weak var xcodeAliasListButton: NSPopUpButton!
     
-    public var callback: AddRuleHandler?
+    public var ruleDidChange: AddRuleHandler?
     
 
     override func viewDidLoad() {
@@ -31,15 +31,15 @@ class AddRuleViewController: NSViewController {
     }
     
     @IBAction func OKAction(_ sender: Any) {
-
         guard let selectedExtension = extensionListButton.selectedItem?.title, let fileExtension = XcodeFileExtension(rawValue: selectedExtension) else {
             return
         }
         let xcodeAliasIndex = xcodeAliasListButton.indexOfSelectedItem
         guard xcodeAliasIndex >= 0 && xcodeAliasIndex < ApplicationOpener.shared.xcodeAlias.count else { return }
         
-        let xcodeRule = XcodeRule(condition: fileExtension, xcodeAlias: ApplicationOpener.shared.xcodeAlias[xcodeAliasIndex])
-        callback?(xcodeRule)
+        let xcodeRule = XcodeRule(condition: fileExtension,
+                                  xcodeAlias: ApplicationOpener.shared.xcodeAlias[xcodeAliasIndex])
+        ruleDidChange?(xcodeRule)
         
         dismiss(sender)
     }

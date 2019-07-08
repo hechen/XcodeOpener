@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        let mainAppIdentifier = "app.chen.osx.XcodeOpener"
+        let mainAppIdentifier = "app.chen.macos.XcodeOpener"
         let runningApps = NSWorkspace.shared.runningApplications
         let isRunning = !runningApps.filter { $0.bundleIdentifier == mainAppIdentifier }.isEmpty
         
@@ -47,5 +47,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 extension Notification.Name {
-    static let killLauncher = Notification.Name("app.chen.xcodeopener.killLauncher")
+    static let killLauncher = Notification.Name("app.chen.macos.XcodeOpener.killLauncher")
 }

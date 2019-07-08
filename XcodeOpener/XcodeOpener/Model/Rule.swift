@@ -11,21 +11,21 @@ import Foundation
 
 typealias ApplicationExecutionPath = String
 
-
-protocol Rule {
-    var condition: XcodeFileExtension { get }
-    var execution: ApplicationExecutionPath { get }
-}
-
-
-struct XcodeRule: Rule, Codable {
+struct XcodeRule: Codable {
     let condition: XcodeFileExtension
     var execution: ApplicationExecutionPath {
         return xcodeAlias.applicationPath
     }
     let xcodeAlias: XcodeAlias
-    
-    static func == (lhs: XcodeRule, rhs: XcodeRule) -> Bool {
-        return lhs.condition == rhs.condition && lhs.xcodeAlias == rhs.xcodeAlias
+}
+extension XcodeRule: Equatable {}
+
+extension XcodeRule {
+    func match(_ anotherCond: XcodeFileExtension?) -> Bool {
+        if let anotherCond = anotherCond {
+            return condition == anotherCond
+        }
+        return false
     }
 }
+

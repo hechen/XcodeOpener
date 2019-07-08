@@ -11,8 +11,6 @@ import Foundation
 struct XcodeAlias: Codable {
     let alias: String
     let applicationPath: String
-    
-    static func == (lhs: XcodeAlias, rhs: XcodeAlias) -> Bool {
-        return lhs.alias == rhs.alias && lhs.applicationPath == rhs.applicationPath
-    }
 }
+
+extension XcodeAlias: Equatable { }

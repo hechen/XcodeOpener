@@ -8,9 +8,8 @@
 
 import Cocoa
 
-
 extension Notification.Name {
-    static let killLauncher = Notification.Name("app.chen.xcodeopener.killLauncher")
+    static let killLauncher = Notification.Name("app.chen.macos.XcodeOpener.killLauncher")
 }
 
 @NSApplicationMain

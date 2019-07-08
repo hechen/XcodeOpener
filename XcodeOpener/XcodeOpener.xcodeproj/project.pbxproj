@@ -19,15 +19,17 @@
 		741AE95C225DDD7A00DDE7EA /* XcodesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */; };
 		741AE95F225DDF0100DDE7EA /* Xcodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */; };
 		741AE961225DDF9000DDE7EA /* Rules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741AE960225DDF9000DDE7EA /* Rules.storyboard */; };
-		741AE965225DDFF600DDE7EA /* OpenRulesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE964225DDFF600DDE7EA /* OpenRulesListViewController.swift */; };
+		741AE965225DDFF600DDE7EA /* RulesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE964225DDFF600DDE7EA /* RulesListViewController.swift */; };
 		741AE968225DE01800DDE7EA /* AddRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE966225DE01800DDE7EA /* AddRuleViewController.swift */; };
 		741AE96B225DE02C00DDE7EA /* AddXcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */; };
+		74650E2B22D2F72500BA5154 /* RulesListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */; };
 		74A5B7F3225DE7E600293442 /* XcodeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7F2225DE7E600293442 /* XcodeAlias.swift */; };
 		74A5B7F5225DE81800293442 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7F4225DE81800293442 /* Rule.swift */; };
 		74A5B7FE225DF55600293442 /* NSStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7FD225DF55600293442 /* NSStoryboard+.swift */; };
 		74A5B800225DFF5D00293442 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7FF225DFF5D00293442 /* AppDefaults.swift */; };
 		74A5B802225E01D600293442 /* KeyValueStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B801225E01D600293442 /* KeyValueStoreType.swift */; };
 		74A5B804225E01EB00293442 /* NSButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B803225E01EB00293442 /* NSButton+.swift */; };
+		74AAC09B22D3170E007F4E23 /* XcodesListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAC09A22D3170E007F4E23 /* XcodesListViewController+TableView.swift */; };
 		74EC1572225DC31D001A6439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1571225DC31D001A6439 /* AppDelegate.swift */; };
 		74EC1574225DC31D001A6439 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1573225DC31D001A6439 /* MainViewController.swift */; };
 		74EC1576225DC31F001A6439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EC1575225DC31F001A6439 /* Assets.xcassets */; };
@@ -63,15 +65,17 @@
 		741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodesListViewController.swift; sourceTree = "<group>"; };
 		741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xcodes.storyboard; sourceTree = "<group>"; };
 		741AE960225DDF9000DDE7EA /* Rules.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rules.storyboard; sourceTree = "<group>"; };
-		741AE964225DDFF600DDE7EA /* OpenRulesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRulesListViewController.swift; sourceTree = "<group>"; };
+		741AE964225DDFF600DDE7EA /* RulesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesListViewController.swift; sourceTree = "<group>"; };
 		741AE966225DE01800DDE7EA /* AddRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewController.swift; sourceTree = "<group>"; };
 		741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddXcodeViewController.swift; sourceTree = "<group>"; };
+		74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RulesListViewController+TableView.swift"; sourceTree = "<group>"; };
 		74A5B7F2225DE7E600293442 /* XcodeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeAlias.swift; sourceTree = "<group>"; };
 		74A5B7F4225DE81800293442 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		74A5B7FD225DF55600293442 /* NSStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+.swift"; sourceTree = "<group>"; };
 		74A5B7FF225DFF5D00293442 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		74A5B801225E01D600293442 /* KeyValueStoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStoreType.swift; sourceTree = "<group>"; };
 		74A5B803225E01EB00293442 /* NSButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+.swift"; sourceTree = "<group>"; };
+		74AAC09A22D3170E007F4E23 /* XcodesListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XcodesListViewController+TableView.swift"; sourceTree = "<group>"; };
 		74EC156E225DC31D001A6439 /* XcodeOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EC1571225DC31D001A6439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74EC1573225DC31D001A6439 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */,
 				741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */,
 				741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */,
+				74AAC09A22D3170E007F4E23 /* XcodesListViewController+TableView.swift */,
 			);
 			path = Xcodes;
 			sourceTree = "<group>";
@@ -149,8 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				741AE960225DDF9000DDE7EA /* Rules.storyboard */,
-				741AE964225DDFF600DDE7EA /* OpenRulesListViewController.swift */,
+				741AE964225DDFF600DDE7EA /* RulesListViewController.swift */,
 				741AE966225DE01800DDE7EA /* AddRuleViewController.swift */,
+				74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -337,12 +343,14 @@
 				74A5B7F3225DE7E600293442 /* XcodeAlias.swift in Sources */,
 				740340D7225F391D00193BC1 /* DefaultsSettingViewController.swift in Sources */,
 				740340B9225F1F2800193BC1 /* LaunchAtLogin.swift in Sources */,
+				74AAC09B22D3170E007F4E23 /* XcodesListViewController+TableView.swift in Sources */,
 				741AE957225DC4B800DDE7EA /* ApplicationOpener.swift in Sources */,
 				74EC1574225DC31D001A6439 /* MainViewController.swift in Sources */,
 				74A5B802225E01D600293442 /* KeyValueStoreType.swift in Sources */,
 				740340D3225F2EE600193BC1 /* MainWindowController.swift in Sources */,
+				74650E2B22D2F72500BA5154 /* RulesListViewController+TableView.swift in Sources */,
 				74A5B7F5225DE81800293442 /* Rule.swift in Sources */,
-				741AE965225DDFF600DDE7EA /* OpenRulesListViewController.swift in Sources */,
+				741AE965225DDFF600DDE7EA /* RulesListViewController.swift in Sources */,
 				74A5B7FE225DF55600293442 /* NSStoryboard+.swift in Sources */,
 				74A5B800225DFF5D00293442 /* AppDefaults.swift in Sources */,
 				741AE95C225DDD7A00DDE7EA /* XcodesListViewController.swift in Sources */,
@@ -389,9 +397,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerLauncher;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.XcodeOpenerLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -409,9 +417,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerLauncher;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.XcodeOpenerLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -536,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XcodeOpener/XcodeOpener.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -545,9 +554,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpener;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.XcodeOpener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -555,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XcodeOpener/XcodeOpener.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -564,9 +574,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpener;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.XcodeOpener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
