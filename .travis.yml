@@ -1,8 +1,9 @@
 language: swift
 osx_image: xcode10.2.1
-xcode_destination: platform=macOS
-xcode_project: XcodeOpener/XcodeOpener.xcodeproj
-xcode_scheme: XcodeOpener
+
+script:
+- set -o pipefail
+- xcodebuild -project XcodeOpener/XcodeOpener.xcodeproj -scheme XcodeOpener -destination platform\=macOS build | xcpretty
 
 notifications:
   slack: $SLACK_CHANNEL
