@@ -60,8 +60,8 @@ extension NSStoryboard {
         let vc = instantiateController(withIdentifier: .mainWindowController) as! MainWindowController
         return vc
     }
-    func instantiateDefaultsSettingViewController() -> DefaultsSettingViewController {
-        let vc = instantiateController(withIdentifier: .defaultsSettingViewController) as! DefaultsSettingViewController
+    func instantiateDefaultsSettingViewController() -> FileExtensionRegisterViewController {
+        let vc = instantiateController(withIdentifier: .defaultsSettingViewController) as! FileExtensionRegisterViewController
         return vc
     }
 }

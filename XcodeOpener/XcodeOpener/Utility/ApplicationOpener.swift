@@ -43,8 +43,8 @@ class ApplicationOpener {
     private(set) var xcodeAlias = [XcodeAlias]()
     
     init() {
-        self.rules = AppDefaults.shared.openRules
-        self.xcodeAlias = AppDefaults.shared.xcodeAliases
+        rules = AppDefaults.shared.openRules
+        xcodeAlias = AppDefaults.shared.xcodeAliases
     }
     
     // use user-defined opener rules to open this file.

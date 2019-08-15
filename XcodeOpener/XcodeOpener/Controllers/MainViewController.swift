@@ -16,7 +16,7 @@ class MainViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         xcodeListBox.borderType = .noBorder
         ruleListBox.borderType = .noBorder
@@ -29,14 +29,14 @@ class MainViewController: NSViewController {
         super.viewDidAppear()
         
         if !ApplicationOpener.shared.checkDefaultApplication(for: .project) || !ApplicationOpener.shared.checkDefaultApplication(for: .workspace) {
-            presentAsSheet(NSStoryboard.main.instantiateDefaultsSettingViewController())
+            presentAsModalWindow(NSStoryboard.main.instantiateDefaultsSettingViewController())
         }
     }
-
+    
     @IBAction func startAtLoginChecked(_ sender: Any) {
         LaunchAtLogin.isEnabled = startAtLoginButton.isOn
     }
-
+    
     @IBAction func switchApplicationMode(_ sender: Any) {
         guard let mode = ApplicationMode(rawValue: switchAppModeButton.indexOfSelectedItem) else { return }
         AppModeSwitcher.mode = mode

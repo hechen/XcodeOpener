@@ -8,13 +8,15 @@
 
 import Cocoa
 
-class DefaultsSettingViewController: NSViewController {
+class FileExtensionRegisterViewController: NSViewController {
     
     @IBOutlet weak var xcodeWorkspaceCheckedButton: NSButton!
     @IBOutlet weak var xcodeProjCheckedButton: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do view setup here.
+        title = "Register File Extension"
         xcodeProjCheckedButton.isOn = ApplicationOpener.shared.checkDefaultApplication(for: .project)
         xcodeWorkspaceCheckedButton.isOn = ApplicationOpener.shared.checkDefaultApplication(for: .workspace)
     }

@@ -14,7 +14,7 @@
 		740340CA225F277E00193BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740340C8225F277E00193BC1 /* Main.storyboard */; };
 		740340D1225F289F00193BC1 /* XcodeOpenerLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 740340C0225F277C00193BC1 /* XcodeOpenerLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		740340D3225F2EE600193BC1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740340D2225F2EE600193BC1 /* MainWindowController.swift */; };
-		740340D7225F391D00193BC1 /* DefaultsSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */; };
+		740340D7225F391D00193BC1 /* FileExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740340D6225F391D00193BC1 /* FileExtensionRegisterViewController.swift */; };
 		741AE957225DC4B800DDE7EA /* ApplicationOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */; };
 		741AE95C225DDD7A00DDE7EA /* XcodesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */; };
 		741AE95F225DDF0100DDE7EA /* Xcodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */; };
@@ -22,6 +22,8 @@
 		741AE965225DDFF600DDE7EA /* RulesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE964225DDFF600DDE7EA /* RulesListViewController.swift */; };
 		741AE968225DE01800DDE7EA /* AddRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE966225DE01800DDE7EA /* AddRuleViewController.swift */; };
 		741AE96B225DE02C00DDE7EA /* AddXcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */; };
+		744E4291230507D900572EFD /* XcodeOpenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744E4290230507D900572EFD /* XcodeOpenerUITests.swift */; };
+		744E429F230507E700572EFD /* XcodeOpenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744E429E230507E700572EFD /* XcodeOpenerTests.swift */; };
 		74650E2B22D2F72500BA5154 /* RulesListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */; };
 		74A5B7F3225DE7E600293442 /* XcodeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7F2225DE7E600293442 /* XcodeAlias.swift */; };
 		74A5B7F5225DE81800293442 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5B7F4225DE81800293442 /* Rule.swift */; };
@@ -35,6 +37,23 @@
 		74EC1576225DC31F001A6439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EC1575225DC31F001A6439 /* Assets.xcassets */; };
 		74EC1579225DC31F001A6439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EC1577225DC31F001A6439 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		744E4293230507D900572EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74EC1566225DC31D001A6439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74EC156D225DC31D001A6439;
+			remoteInfo = XcodeOpener;
+		};
+		744E42A1230507E700572EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74EC1566225DC31D001A6439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74EC156D225DC31D001A6439;
+			remoteInfo = XcodeOpener;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		740340D0225F289600193BC1 /* CopyFiles */ = {
@@ -60,7 +79,7 @@
 		740340CB225F277E00193BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		740340CC225F277E00193BC1 /* XcodeOpenerLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeOpenerLauncher.entitlements; sourceTree = "<group>"; };
 		740340D2225F2EE600193BC1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsSettingViewController.swift; sourceTree = "<group>"; };
+		740340D6225F391D00193BC1 /* FileExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExtensionRegisterViewController.swift; sourceTree = "<group>"; };
 		741AE956225DC4B800DDE7EA /* ApplicationOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationOpener.swift; sourceTree = "<group>"; };
 		741AE95A225DDD7A00DDE7EA /* XcodesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodesListViewController.swift; sourceTree = "<group>"; };
 		741AE95E225DDF0100DDE7EA /* Xcodes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xcodes.storyboard; sourceTree = "<group>"; };
@@ -68,6 +87,12 @@
 		741AE964225DDFF600DDE7EA /* RulesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesListViewController.swift; sourceTree = "<group>"; };
 		741AE966225DE01800DDE7EA /* AddRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewController.swift; sourceTree = "<group>"; };
 		741AE96A225DE02C00DDE7EA /* AddXcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddXcodeViewController.swift; sourceTree = "<group>"; };
+		744E428E230507D900572EFD /* XcodeOpenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeOpenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744E4290230507D900572EFD /* XcodeOpenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeOpenerUITests.swift; sourceTree = "<group>"; };
+		744E4292230507D900572EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744E429C230507E700572EFD /* XcodeOpenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeOpenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744E429E230507E700572EFD /* XcodeOpenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeOpenerTests.swift; sourceTree = "<group>"; };
+		744E42A0230507E700572EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RulesListViewController+TableView.swift"; sourceTree = "<group>"; };
 		74A5B7F2225DE7E600293442 /* XcodeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeAlias.swift; sourceTree = "<group>"; };
 		74A5B7F4225DE81800293442 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
@@ -87,6 +112,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		740340BD225F277C00193BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744E428B230507D900572EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744E4299230507E700572EFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -129,7 +168,7 @@
 		740340D5225F346300193BC1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				740340D6225F391D00193BC1 /* DefaultsSettingViewController.swift */,
+				740340D6225F391D00193BC1 /* FileExtensionRegisterViewController.swift */,
 				74EC1577225DC31F001A6439 /* Main.storyboard */,
 				74EC1573225DC31D001A6439 /* MainViewController.swift */,
 				740340D2225F2EE600193BC1 /* MainWindowController.swift */,
@@ -159,6 +198,24 @@
 				74650E2A22D2F72500BA5154 /* RulesListViewController+TableView.swift */,
 			);
 			path = Rules;
+			sourceTree = "<group>";
+		};
+		744E428F230507D900572EFD /* XcodeOpenerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				744E4290230507D900572EFD /* XcodeOpenerUITests.swift */,
+				744E4292230507D900572EFD /* Info.plist */,
+			);
+			path = XcodeOpenerUITests;
+			sourceTree = "<group>";
+		};
+		744E429D230507E700572EFD /* XcodeOpenerTests */ = {
+			isa = PBXGroup;
+			children = (
+				744E429E230507E700572EFD /* XcodeOpenerTests.swift */,
+				744E42A0230507E700572EFD /* Info.plist */,
+			);
+			path = XcodeOpenerTests;
 			sourceTree = "<group>";
 		};
 		74A5B805225E020900293442 /* Extension */ = {
@@ -193,6 +250,8 @@
 			children = (
 				74EC1570225DC31D001A6439 /* XcodeOpener */,
 				740340C1225F277C00193BC1 /* XcodeOpenerLauncher */,
+				744E428F230507D900572EFD /* XcodeOpenerUITests */,
+				744E429D230507E700572EFD /* XcodeOpenerTests */,
 				74EC156F225DC31D001A6439 /* Products */,
 				5F010D98B3DCA8430DA3E0A3 /* Frameworks */,
 			);
@@ -203,6 +262,8 @@
 			children = (
 				74EC156E225DC31D001A6439 /* XcodeOpener.app */,
 				740340C0225F277C00193BC1 /* XcodeOpenerLauncher.app */,
+				744E428E230507D900572EFD /* XcodeOpenerUITests.xctest */,
+				744E429C230507E700572EFD /* XcodeOpenerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +304,42 @@
 			productReference = 740340C0225F277C00193BC1 /* XcodeOpenerLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
+		744E428D230507D900572EFD /* XcodeOpenerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744E4297230507D900572EFD /* Build configuration list for PBXNativeTarget "XcodeOpenerUITests" */;
+			buildPhases = (
+				744E428A230507D900572EFD /* Sources */,
+				744E428B230507D900572EFD /* Frameworks */,
+				744E428C230507D900572EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744E4294230507D900572EFD /* PBXTargetDependency */,
+			);
+			name = XcodeOpenerUITests;
+			productName = XcodeOpenerUITests;
+			productReference = 744E428E230507D900572EFD /* XcodeOpenerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		744E429B230507E700572EFD /* XcodeOpenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744E42A3230507E700572EFD /* Build configuration list for PBXNativeTarget "XcodeOpenerTests" */;
+			buildPhases = (
+				744E4298230507E700572EFD /* Sources */,
+				744E4299230507E700572EFD /* Frameworks */,
+				744E429A230507E700572EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744E42A2230507E700572EFD /* PBXTargetDependency */,
+			);
+			name = XcodeOpenerTests;
+			productName = XcodeOpenerTests;
+			productReference = 744E429C230507E700572EFD /* XcodeOpenerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		74EC156D225DC31D001A6439 /* XcodeOpener */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74EC157E225DC31F001A6439 /* Build configuration list for PBXNativeTarget "XcodeOpener" */;
@@ -266,12 +363,20 @@
 		74EC1566225DC31D001A6439 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "chen he";
 				TargetAttributes = {
 					740340BF225F277C00193BC1 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					744E428D230507D900572EFD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 74EC156D225DC31D001A6439;
+					};
+					744E429B230507E700572EFD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 74EC156D225DC31D001A6439;
 					};
 					74EC156D225DC31D001A6439 = {
 						CreatedOnToolsVersion = 10.2;
@@ -299,6 +404,8 @@
 			targets = (
 				74EC156D225DC31D001A6439 /* XcodeOpener */,
 				740340BF225F277C00193BC1 /* XcodeOpenerLauncher */,
+				744E428D230507D900572EFD /* XcodeOpenerUITests */,
+				744E429B230507E700572EFD /* XcodeOpenerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +417,20 @@
 			files = (
 				740340C7225F277E00193BC1 /* Assets.xcassets in Resources */,
 				740340CA225F277E00193BC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744E428C230507D900572EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744E429A230507E700572EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,13 +456,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		744E428A230507D900572EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744E4291230507D900572EFD /* XcodeOpenerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744E4298230507E700572EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744E429F230507E700572EFD /* XcodeOpenerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74EC156A225DC31D001A6439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				740340BB225F254E00193BC1 /* AppModeSwitcher.swift in Sources */,
 				74A5B7F3225DE7E600293442 /* XcodeAlias.swift in Sources */,
-				740340D7225F391D00193BC1 /* DefaultsSettingViewController.swift in Sources */,
+				740340D7225F391D00193BC1 /* FileExtensionRegisterViewController.swift in Sources */,
 				740340B9225F1F2800193BC1 /* LaunchAtLogin.swift in Sources */,
 				74AAC09B22D3170E007F4E23 /* XcodesListViewController+TableView.swift in Sources */,
 				741AE957225DC4B800DDE7EA /* ApplicationOpener.swift in Sources */,
@@ -362,6 +499,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		744E4294230507D900572EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74EC156D225DC31D001A6439 /* XcodeOpener */;
+			targetProxy = 744E4293230507D900572EFD /* PBXContainerItemProxy */;
+		};
+		744E42A2230507E700572EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74EC156D225DC31D001A6439 /* XcodeOpener */;
+			targetProxy = 744E42A1230507E700572EFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		740340C8225F277E00193BC1 /* Main.storyboard */ = {
@@ -422,6 +572,88 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		744E4295230507D900572EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NM8T9PQ2C4;
+				INFOPLIST_FILE = XcodeOpenerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = XcodeOpener;
+			};
+			name = Debug;
+		};
+		744E4296230507D900572EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NM8T9PQ2C4;
+				INFOPLIST_FILE = XcodeOpenerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = XcodeOpener;
+			};
+			name = Release;
+		};
+		744E42A4230507E700572EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NM8T9PQ2C4;
+				INFOPLIST_FILE = XcodeOpenerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeOpener.app/Contents/MacOS/XcodeOpener";
+			};
+			name = Debug;
+		};
+		744E42A5230507E700572EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NM8T9PQ2C4;
+				INFOPLIST_FILE = XcodeOpenerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.XcodeOpenerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeOpener.app/Contents/MacOS/XcodeOpener";
 			};
 			name = Release;
 		};
@@ -590,6 +822,24 @@
 			buildConfigurations = (
 				740340CE225F277E00193BC1 /* Debug */,
 				740340CF225F277E00193BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744E4297230507D900572EFD /* Build configuration list for PBXNativeTarget "XcodeOpenerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744E4295230507D900572EFD /* Debug */,
+				744E4296230507D900572EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744E42A3230507E700572EFD /* Build configuration list for PBXNativeTarget "XcodeOpenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744E42A4230507E700572EFD /* Debug */,
+				744E42A5230507E700572EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

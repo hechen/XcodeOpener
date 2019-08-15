@@ -26,7 +26,8 @@ class XcodesListViewController: NSViewController {
             ApplicationOpener.shared.addAlias($0)
             self?.xcodeVersionsList.reloadData()
         }
-        presentAsSheet(xcodeViewController)
+//        presentAsSheet(xcodeViewController)
+        presentAsModalWindow(xcodeViewController)
     }
     
     
