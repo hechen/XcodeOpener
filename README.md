@@ -6,6 +6,11 @@ Select which file will be opened by which xcode.
 
 ![Main Interface](.assets/Main.png)
 
+if you want recover registeration, click the back to xcode button on the menu.
+
+![Back to xcode](.assets/Recover.png)
+
+
 
 ## Under the hood
 
