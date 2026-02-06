@@ -2,28 +2,31 @@
 //  AppModeSwitcher.swift
 //  XcodeOpener
 //
-//  Created by chen he on 2019/4/11.
-//  Copyright © 2019 chen he. All rights reserved.
+//  Created by Chen He on 2019/4/11.
+//  Updated for modern macOS APIs
 //
 
-import Foundation
+import Cocoa
 
 public struct AppModeSwitcher {
     public static var mode: ApplicationMode {
         set {
-            var transformState = ProcessApplicationTransformState(kProcessTransformToForegroundApplication)
             switch newValue {
             case .menuAndDock:
-                MainWindowController.shared.window?.makeKeyAndOrderFront(nil)                
+                // Regular app with dock icon and menu bar
+                NSApp.setActivationPolicy(.regular)
+                MainWindowController.shared.window?.makeKeyAndOrderFront(nil)
+                NSApp.activate(ignoringOtherApps: true)
+                
             case .menuOnly:
-                transformState = ProcessApplicationTransformState(kProcessTransformToUIElementApplication)
+                // Accessory app (menu bar only, no dock icon)
+                NSApp.setActivationPolicy(.accessory)
+                
             case .background:
-                transformState = ProcessApplicationTransformState(kProcessTransformToBackgroundApplication)
+                // Background app (no UI)
+                NSApp.setActivationPolicy(.prohibited)
             }
-            var psn = ProcessSerialNumber(highLongOfPSN: 0, lowLongOfPSN: UInt32(kCurrentProcess))
-            if TransformProcessType(&psn, transformState) == 0 {
-                AppDefaults.shared.appMode = newValue
-            }
+            AppDefaults.shared.appMode = newValue
         }
         get {
             return AppDefaults.shared.appMode

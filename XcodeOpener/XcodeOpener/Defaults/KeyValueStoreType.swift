@@ -14,7 +14,7 @@ public enum ApplicationMode: Int {
     case background
 }
 
-protocol KeyValueStoreType: class {
+protocol KeyValueStoreType: AnyObject {
     func bool(for key: String) -> Bool
     func setBool(for key: String, _ flag: Bool)
     
